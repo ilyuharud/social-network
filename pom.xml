@@ -15,6 +15,9 @@
 	<description>OTUS Highload Architect course Homework</description>
 	<properties>
 		<java.version>21</java.version>
+		<mysql-connector.version>8.2.0</mysql-connector.version>
+		<jsonwebtoken.version>0.11.5</jsonwebtoken.version>
+		<liquibase.version>4.25.1</liquibase.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -33,13 +36,13 @@
 		<dependency>
 			<groupId>com.mysql</groupId>
 			<artifactId>mysql-connector-j</artifactId>
-			<version>8.2.0</version>
+			<version>${mysql-connector.version}</version>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.liquibase</groupId>
 			<artifactId>liquibase-core</artifactId>
-			<version>4.25.1</version>
+			<version>${liquibase.version}</version>
 		</dependency>
 
 		<dependency>
@@ -50,17 +53,17 @@
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt-api</artifactId>
-			<version>0.11.5</version>
+			<version>${jsonwebtoken.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt-impl</artifactId>
-			<version>0.11.5</version>
+			<version>${jsonwebtoken.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt-jackson</artifactId>
-			<version>0.11.5</version>
+			<version>${jsonwebtoken.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
