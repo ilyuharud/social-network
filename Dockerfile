@@ -1,7 +1,6 @@
 FROM maven:3.9.6-amazoncorretto-21 AS builder
 WORKDIR /social-network
 COPY ./../ /social-network/.
-RUN ls -l /social-network
 RUN mvn clean package
 
 
